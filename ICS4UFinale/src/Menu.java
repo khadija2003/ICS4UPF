@@ -42,15 +42,15 @@ public class Menu {
 				cadre.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 				
 				JLabel textLabel = new JLabel("" +"<html>" +
-						"1. Player starts as the blue character.<br> " +
-						"2. Player must reach the red endpoint to win.<br> " +
-						"3. Get coins while making your way through the maze. <br>" +
-						"4. Achieve a higher score.<br>" +
+						"1. Le joueur commence et s'identifie avec le point bleu.<br> " +
+						"2. Le joueur doit atteindre le point rouge pour gagner.<br> " +
+						"3. Amasse des jettons lorsque tu parcours le labyrinthe. <br>" +
+						"4. Atteint un score elevee.<br>" +
 						"" +
-						"5. Move the character by using the 'W-A-S-D' keyboard or <br>" +
-						"by using the standard arrow keys to move.<br>" +
+						"5. Bouge le point bleu en utillisant 'W-A-S-D' sur votre clavier ou <br>" +
+						"en utillisant les touches directionelles standard.<br>" +
 						"" +
-						"6. Mouse clicks can also be used on the on-screen <br>directional buttons as well. </html>");
+						"6. Les clics de souris peuvent egalement etre utiliser sur l'ecran <br>les bouttons directionels aussi. </html>");
 				cadre.getContentPane().add(textLabel, BorderLayout.CENTER);
 				
 				cadre.setLocationRelativeTo(null);
