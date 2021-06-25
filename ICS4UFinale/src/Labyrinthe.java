@@ -1,9 +1,12 @@
-
+//////////////////////
+//ICS4U PROJET FINALE
+//KHADIJA AISSIOUI
+/////////////////////
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
-
+//ce code determine l'allure du labyrinthe (tailles, couleurs, parcours)
 public class Labyrinthe extends JPanel {
 	private char[][] labyrinthe;
 	private int taille;
@@ -44,7 +47,7 @@ public class Labyrinthe extends JPanel {
 		}
 		generate(1,1);
 	}
-	
+	//Les couleurs present dans le modele dy labyrinth
 	public void paint(Graphics g){
 		super.paint(g);
 		int n = 500/(echelle+10);
@@ -89,7 +92,7 @@ public class Labyrinthe extends JPanel {
 			System.out.println("");
 		}
 	}
-	
+	//donne une location random du point rouge
 	public void ajouterObjet(int montant){
 		Random location = new Random();
 		
