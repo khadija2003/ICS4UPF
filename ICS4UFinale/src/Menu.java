@@ -1,4 +1,7 @@
-
+/////////////////////////
+//ICS4U PROJET FINALE
+//KHADIJA AISSIOUI
+////////////////////////
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -8,16 +11,16 @@ public class Menu {
 	public Menu() {
 
 		BoxLayout disposition = new BoxLayout(cadre.getContentPane(), BoxLayout.Y_AXIS); 
-		
+		//code pour initialiser le boutton "jouer"
 		Button jouer = new Button("Jouer");
 		jouer.setFont(new Font("Verdana", Font.BOLD, 32));
-		
+		//code pour initialiser le boutton "instructions"
 		Button instruction = new Button("Instructions");
 		instruction.setFont(new Font("Verdana", Font.BOLD, 32));
 		
 		cadre.add(jouer); 
 		cadre.add(instruction);
-
+		//la taille et position des bouttons
 		cadre.setLayout(disposition);
 		cadre.setSize(500,500);
 		cadre.setLocationRelativeTo(null);
@@ -33,14 +36,14 @@ public class Menu {
 				new Dificulte();
 			}
 		});
-		
+		//La section instruction du menu
 		instruction.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent ae)
 			{	
 				JFrame cadre = new JFrame("Instructions");
 				cadre.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
-				
+				//Les instructions du jeu
 				JLabel textLabel = new JLabel("" +"<html>" +
 						"1. Le joueur commence et s'identifie avec le point bleu.<br> " +
 						"2. Le joueur doit atteindre le point rouge pour gagner.<br> " +
