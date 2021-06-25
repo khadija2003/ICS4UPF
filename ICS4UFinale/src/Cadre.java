@@ -1,4 +1,7 @@
-
+////////////////////
+//ICS4U PROJET FINALE
+//KHADIJA AISSIOUI
+///////////////////
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
