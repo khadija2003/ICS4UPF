@@ -7,7 +7,7 @@ import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
 public class Cadre {
-
+		//ce code determine les bordures du jeu
 		static JFrame cadre = new JFrame("Labyrinthe");
 		JPanel p_1 = new JPanel(new BorderLayout());
 		JPanel p_2 = new JPanel(new BorderLayout());
@@ -22,7 +22,7 @@ public class Cadre {
 			cadre.add(p_1, BorderLayout.CENTER);				
 			cadre.add(p_2, BorderLayout.SOUTH);	
 			
-			
+			//bordure du sud
 			JButton sud = new JButton("Sud");
 			sud.setFocusable(false);
 			p_2.add(sud, BorderLayout.SOUTH);			
@@ -33,7 +33,7 @@ public class Cadre {
 					Joueur.moveDown(test);
 				}
 			});
-			
+			//bordure du nord
 			JButton nord = new JButton("Nord");
 			nord.setFocusable(false);
 			p_2.add(nord, BorderLayout.NORTH);
@@ -44,7 +44,7 @@ public class Cadre {
 					Joueur.moveUp(test);
 				}
 			});
-			
+			//bordure de est
 			JButton est = new JButton("Est");
 			est.setFocusable(false);
 			p_2.add(est, BorderLayout.EAST);
@@ -56,7 +56,7 @@ public class Cadre {
 				}
 			});		
 			
-			
+			//bordure de ouest
 			JButton ouest = new JButton("Ouest");
 			ouest.setFocusable(false);
 			p_2.add(ouest, BorderLayout.WEST);
@@ -67,7 +67,7 @@ public class Cadre {
 					Joueur.moveLeft(test);
 				}
 			});	
-			
+			//boutton "new game" sur le main jeu
 			JButton menu = new JButton("New Game");
 			menu.setFocusable(false);
 			p_2.add(menu, BorderLayout.CENTER);
@@ -79,7 +79,7 @@ public class Cadre {
 					new Menu();
 				}
 			});	
-					
+			//ce qui arrive quand tu touche une cle		
 			p_1.addKeyListener(new KeyAdapter()
 			{
 				public void keyPressed(KeyEvent e){				
@@ -98,13 +98,13 @@ public class Cadre {
 			cadre.setBackground(Color.green);
 			cadre.setVisible(true);
 		}
-
+		//l'ammas des pieces dans le jeu 
 		public Cadre(int niveau, int argent){
 	        
 	        cadre.dispose();        
 	        JFrame cadre1 = new JFrame();
-	        
-	        JLabel labelTexte = new JLabel("<html>Congratulations!<br>You got " + argent + " coin(s)!</html>", JLabel.CENTER);
+	        //message qui montre combien de d'argent vous avez ammaser
+	        JLabel labelTexte = new JLabel("<html>Felicitation!<br>Vous avez gagnez " + argent + " sous!</html>", JLabel.CENTER);
 	        labelTexte.setFont(new Font("Verdana", Font.BOLD, 32));
 	        
 	        cadre1.setBackground(Color.green);
